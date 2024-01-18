@@ -1,0 +1,56 @@
+header {
+  width: 100vw;
+  height: 5.833rem;
+  background-color: transparent;
+  position: fixed;
+  z-index: 10;
+  font-family: "Noto Sans KR";
+}
+header > .nav-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+header > .nav-wrap .logo-box {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  width: 10.333rem;
+}
+header > .nav-wrap .nav-list {
+  display: flex;
+  gap: 50px;
+}
+header > .nav-wrap .nav-list li a {
+  font-size: 1.333rem;
+  color: var(--color-font-gray);
+  font-weight: 400;
+}
+header > .nav-wrap .nav-list li a:hover {
+  color: #fff;
+}
+header > .nav-wrap .icon-box {
+  margin-left: auto;
+  height: 2.333rem;
+  display: flex;
+  cursor: pointer;
+  padding-right: 25px;
+}
+header > .nav-wrap .icon-box .search {
+  width: 2.333rem;
+  border: none;
+  background-color: transparent;
+  margin-right: 2.5rem;
+}
+header > .nav-wrap .icon-box .profile {
+  width: 2.333rem;
+  height: 100%;
+}
+header > .nav-wrap .icon-box .profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}/*# sourceMappingURL=header.css.map */

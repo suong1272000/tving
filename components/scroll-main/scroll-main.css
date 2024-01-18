@@ -1,0 +1,45 @@
+.scroll-main .poster-wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px 5rem 0 4rem;
+  margin-top: 5.833rem;
+}
+.scroll-main .poster-wrap .banner {
+  position: relative;
+  background-color: rgb(38, 38, 38);
+  width: 100%;
+  height: 66%;
+  border-radius: 8px;
+}
+.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide .title-wrap {
+  position: absolute;
+  z-index: 2;
+  bottom: 2.66rem;
+  left: 2.67rem;
+  font-size: 2.2rem;
+  color: white;
+  font-family: "Noto Sans KR";
+}
+.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide .title-wrap h4 {
+  margin-top: 0.333rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide .title-wrap p {
+  font-size: 1.5rem;
+}
+.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide .button-wrap {
+  display: flex;
+  position: relative;
+  top: 16.2rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide .button-wrap button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+}/*# sourceMappingURL=scroll-main.css.map */
