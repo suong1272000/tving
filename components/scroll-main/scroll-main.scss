@@ -1,26 +1,35 @@
 .scroll-main{
     .poster-wrap{
-        position: relative;
-        width: 100vw;
         height: 100vh;
+        position: relative;
         padding: 0px 5rem 0 4rem;
         margin-top: 5.833rem;
         .banner{
-            position: relative;
-            background-color: rgb(38, 38, 38);
             width: 100%;
             height: 66%;
+            position: relative;
+            background-color: #262626;
             border-radius: 8px;
+            overflow: hidden;
             .swiper-wrap{
-                .swiper-slide{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                gap: 10px;
+                overflow-x: auto;
+                .swiper-slide-box{
+                    width: 100%;
+                    height: 100%;
+                    scroll-snap-align: start;
                     img{
+                        width: 100%;
+                        object-fit: cover;
                     }
                     .title-wrap{
                         position: absolute;
-                        z-index: 2;
                         bottom: 2.66rem;
                         left: 2.67rem;
-                        font-size: 2.2rem;
                         color: white;
                         font-family: 'Noto Sans KR';
                         h4{
@@ -32,21 +41,47 @@
                             font-size: 1.5rem;
                         }
                     }
-                    .button-wrap{
-                        display: flex;
-                        position: relative;
-                        top: 16.2rem;
-                        margin: 0 auto;  
-                        justify-content: space-between;
-                        padding: 0 4px;        
-                        button{
-                            background-color: transparent;
-                            border: none;
-                            color: #fff;
-                            font-size: 2.2rem;
-                        }
-                    }
                 }
+            }
+        }
+        .category-list{
+            margin-top: 4.2rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            gap: 10px;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .category-list__list-slide{
+                background-color: #525252;
+                background-image: linear-gradient(180deg,rgba(38,38,38,0),#191919);
+                width: 22.2rem;
+                height: 120px;
+                border-radius: 4px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    object-fit: contain;
+                    width: 40%;
+                }
+            }
+        }
+        .swipe-button{
+            position: relative;
+            top: -5.5rem;
+            left: -3.2rem;
+            display: flex;
+            justify-content: space-between;
+            width: 106%;
+            button{
+                background-color: transparent;
+                border: none;
             }
         }
     }
