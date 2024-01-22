@@ -5,47 +5,53 @@
         padding: 0px 5rem 0 4rem;
         margin-top: 5.833rem;
         .banner{
-            width: 100%;
             height: 66%;
-            position: relative;
-            background-color: #262626;
-            border-radius: 8px;
-            overflow: hidden;
-            .swiper-wrap{
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-                gap: 10px;
-                overflow-x: auto;
-                .swiper-slide-box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            gap: 10px;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .swiper-slide-box{
+                background-color: #525252;
+                width: 22.2rem;
+                height: 100%;
+                border-radius: 4px;
+                display: flex;
+                overflow: hidden;
+                .banner-img{
+                    object-fit: cover;
+                    z-index: 1;
+                }
+                .title-wrap{
+                    position: relative;
+                    top: 19rem;
                     width: 100%;
-                    height: 100%;
-                    scroll-snap-align: start;
-                    img{
-                        width: 100%;
-                        object-fit: cover;
+                    color: white;
+                    font-family: "Noto Sans KR";
+                    display: flex;
+                    flex-direction: column;
+                    .title-img{
+                        position: relative;
+                        object-fit: contain;
+                        max-height: 9.833rem;
+                        right: 160.2rem;
                     }
-                    .title-wrap{
-                        position: absolute;
-                        bottom: 2.66rem;
-                        left: 2.67rem;
-                        color: white;
-                        font-family: 'Noto Sans KR';
-                        h4{
-                            margin-top: 0.333rem;
-                            font-size: 3.5rem;
-                            font-weight: 700;
-                        }
-                        p{
-                            font-size: 1.5rem;
-                        }
+                    p{
+                        position: relative;
+                        top: 2rem;
+                        right: 110.2rem;
+                        font-size: 1.46rem;
                     }
                 }
             }
         }
         .category-list{
-            margin-top: 4.2rem;
+            margin-top: 1.2rem;
             width: 100%;
             display: grid;
             grid-template-columns: repeat(7, 1fr);
@@ -79,6 +85,66 @@
             display: flex;
             justify-content: space-between;
             width: 106%;
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        .movie-list{
+            height: 66%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            gap: 10px;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .swiper-slide-box{
+                background-color: #525252;
+                width: 22.2rem;
+                height: 100%;
+                border-radius: 4px;
+                display: flex;
+                overflow: hidden;
+                .banner-img{
+                    object-fit: cover;
+                    z-index: 1;
+                }
+                .title-wrap{
+                    position: relative;
+                    top: 19rem;
+                    width: 100%;
+                    color: white;
+                    font-family: "Noto Sans KR";
+                    display: flex;
+                    flex-direction: column;
+                    .title-img{
+                        position: relative;
+                        object-fit: contain;
+                        max-height: 9.833rem;
+                        right: 160.2rem;
+                    }
+                    p{
+                        position: relative;
+                        top: 2rem;
+                        right: 110.2rem;
+                        font-size: 1.46rem;
+                    }
+                }
+            }
+        }
+        .banner-swipe-button{
+            position: relative;
+            bottom: 19.5rem;
+            left: -3.2rem;
+            display: flex;
+            justify-content: space-between;
+            width: 106%;
+            z-index: 5;
             button{
                 background-color: transparent;
                 border: none;

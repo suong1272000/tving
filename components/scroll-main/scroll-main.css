@@ -5,48 +5,55 @@
   margin-top: 5.833rem;
 }
 .scroll-main .poster-wrap .banner {
-  width: 100%;
   height: 66%;
-  position: relative;
-  background-color: #262626;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.scroll-main .poster-wrap .banner .swiper-wrap {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   gap: 10px;
   overflow-x: auto;
 }
-.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide-box {
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: start;
+.scroll-main .poster-wrap .banner::-webkit-scrollbar {
+  display: none;
 }
-.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide-box img {
-  width: 100%;
+.scroll-main .poster-wrap .banner .swiper-slide-box {
+  background-color: #525252;
+  width: 22.2rem;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+}
+.scroll-main .poster-wrap .banner .swiper-slide-box .banner-img {
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 1;
 }
-.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide-box .title-wrap {
-  position: absolute;
-  bottom: 2.66rem;
-  left: 2.67rem;
+.scroll-main .poster-wrap .banner .swiper-slide-box .title-wrap {
+  position: relative;
+  top: 19rem;
+  width: 100%;
   color: white;
   font-family: "Noto Sans KR";
+  display: flex;
+  flex-direction: column;
 }
-.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide-box .title-wrap h4 {
-  margin-top: 0.333rem;
-  font-size: 3.5rem;
-  font-weight: 700;
+.scroll-main .poster-wrap .banner .swiper-slide-box .title-wrap .title-img {
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 9.833rem;
+  right: 160.2rem;
 }
-.scroll-main .poster-wrap .banner .swiper-wrap .swiper-slide-box .title-wrap p {
-  font-size: 1.5rem;
+.scroll-main .poster-wrap .banner .swiper-slide-box .title-wrap p {
+  position: relative;
+  top: 2rem;
+  right: 110.2rem;
+  font-size: 1.46rem;
 }
 .scroll-main .poster-wrap .category-list {
-  margin-top: 4.2rem;
+  margin-top: 1.2rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -82,6 +89,67 @@
   width: 106%;
 }
 .scroll-main .poster-wrap .swipe-button button {
+  background-color: transparent;
+  border: none;
+}
+.scroll-main .poster-wrap .movie-list {
+  height: 66%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 10px;
+  overflow-x: auto;
+}
+.scroll-main .poster-wrap .movie-list::-webkit-scrollbar {
+  display: none;
+}
+.scroll-main .poster-wrap .movie-list .swiper-slide-box {
+  background-color: #525252;
+  width: 22.2rem;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+}
+.scroll-main .poster-wrap .movie-list .swiper-slide-box .banner-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.scroll-main .poster-wrap .movie-list .swiper-slide-box .title-wrap {
+  position: relative;
+  top: 19rem;
+  width: 100%;
+  color: white;
+  font-family: "Noto Sans KR";
+  display: flex;
+  flex-direction: column;
+}
+.scroll-main .poster-wrap .movie-list .swiper-slide-box .title-wrap .title-img {
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 9.833rem;
+  right: 160.2rem;
+}
+.scroll-main .poster-wrap .movie-list .swiper-slide-box .title-wrap p {
+  position: relative;
+  top: 2rem;
+  right: 110.2rem;
+  font-size: 1.46rem;
+}
+.scroll-main .poster-wrap .banner-swipe-button {
+  position: relative;
+  bottom: 19.5rem;
+  left: -3.2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 106%;
+  z-index: 5;
+}
+.scroll-main .poster-wrap .banner-swipe-button button {
   background-color: transparent;
   border: none;
 }/*# sourceMappingURL=scroll-main.css.map */
