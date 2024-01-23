@@ -22,3 +22,27 @@ const bannerRightBtn = document.querySelector('.banner-right-btn');
 bannerRightBtn.addEventListener("click", () => {
     bannerPage.scrollBy({left: bannerPage.offsetWidth, behavior: 'smooth'});
 });
+
+const movieFirstPage = document.querySelector('.movie-first-list');
+
+const firstLeftBtn = document.querySelector('.movie-first-left-btn');
+firstLeftBtn.addEventListener("click", () => {
+    movieFirstPage.scrollBy({ left: -bannerPage.offsetWidth, behavior: 'smooth'});
+});
+
+const firstRightBtn = document.querySelector('.movie-first-right-btn');
+firstRightBtn.addEventListener("click", () => {
+    movieFirstPage.scrollBy({left: bannerPage.offsetWidth, behavior: 'smooth'});
+});
+
+const movieSecondPage = document.querySelector('.movie-second-list');
+
+const secondLeftBtn = document.querySelector('.movie-second-left-btn');
+secondLeftBtn.addEventListener("click", () => {
+    movieSecondPage.scrollBy({ left: -bannerPage.offsetWidth, behavior: 'smooth'});
+});
+
+const secondRightBtn = document.querySelector('.movie-second-right-btn');
+secondRightBtn.addEventListener("click", () => {
+    movieSecondPage.scrollBy({left: bannerPage.offsetWidth, behavior: 'smooth'});
+});

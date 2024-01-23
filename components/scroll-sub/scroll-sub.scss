@@ -1,0 +1,96 @@
+.scroll-sub{
+    margin-top: -4.2rem;
+    .poster-wrap{
+        height: 100vh;
+        position: relative;
+        padding: 0px 5rem 0 4rem;
+        .movie-title-text{
+            margin-bottom: 0.8rem;
+            .title{
+                font-size: 1.666rem;
+                color: rgb(255 255 255/var(--tw-text-opacity));
+                font-weight: 700;
+                line-height: 1.5;
+            }
+        }
+        .movie-first-list{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(21, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            gap: 10px;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .swiper-slide-box{
+                background-color: #525252;
+                background-image: linear-gradient(180deg,rgba(38,38,38,0),#191919);
+                width: 15.2rem;
+                height: 100%;
+                border-radius: 4px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .movie-img{
+                    object-fit: contain;
+                }
+            }
+        }
+        .movie-first-list-button{
+            position: relative;
+            bottom: 13.4rem;
+            left: -3.2rem;
+            display: flex;
+            justify-content: space-between;
+            width: 106%;
+            z-index: 5;
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        .movie-second-list{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            gap: 10px;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .swiper-slide-box{
+                background-color: #525252;
+                background-image: linear-gradient(180deg,rgba(38,38,38,0),#191919);
+                width: 15.2rem;
+                height: 100%;
+                border-radius: 4px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .movie-img{
+                    object-fit: contain;
+                }
+            }
+        }
+        .movie-second-list-button{
+            position: relative;
+            bottom: 13.4rem;
+            left: -3.2rem;
+            display: flex;
+            justify-content: space-between;
+            width: 106%;
+            z-index: 5;
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+}

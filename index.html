@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="components/header/header.css">
     <link rel="stylesheet" href="components/main/main.css">
     <link rel="stylesheet" href="components/scroll-main/scroll-main.css">
-    <script src="Js/scroll-main/scroll-button.js" defer></script>
+    <link rel="stylesheet" href="components/scroll-sub/scroll-sub.css">
+    <script type="module" src="Js/scroll-main/scroll-button.js" defer></script>
+    <script type="module" src="Js/data/data.js" defer></script>
+    <script type="module" src="Js/index/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,43 +40,13 @@
             <div class="poster-wrap">
                 <div class="banner">
                     <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                        <div class="title-wrap">
-                            <img class="title-img" src="images/F_webp,1024.webp" alt="타이틀">
-                            <p>관계가 소홀해진 부부 이솜x안재홍의</p>
-                            <p>고자극 불륜 추적 활극</p>
+                        <div class="banner-img">
+                            <img src="images/F_webp,1920.webp" alt="배너이미지">
                         </div>
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                        <div class="title-wrap">
-                            <img class="title-img" src="images/F_webp,1024.webp" alt="타이틀">
-                            <p>관계가 소홀해진 부부 이솜x안재홍의</p>
-                            <p>고자극 불륜 추적 활극</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                        <div class="title-wrap">
-                            <img class="title-img" src="images/F_webp,1024.webp" alt="타이틀">
-                            <p>관계가 소홀해진 부부 이솜x안재홍의</p>
-                            <p>고자극 불륜 추적 활극</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                        <div class="title-wrap">
-                            <img class="title-img" src="images/F_webp,1024.webp" alt="타이틀">
-                            <p>관계가 소홀해진 부부 이솜x안재홍의</p>
-                            <p>고자극 불륜 추적 활극</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                        <div class="title-wrap">
-                            <img class="title-img" src="images/F_webp,1024.webp" alt="타이틀">
-                            <p>관계가 소홀해진 부부 이솜x안재홍의</p>
-                            <p>고자극 불륜 추적 활극</p>
+                        <div class="title-box">
+                            <img src="images/F_webp,1024.webp" alt="타이틀">
+                            <p>${value.description[0]}</p>
+                            <p>${value.description[1]}</p>
                         </div>
                     </div>
                 </div>
@@ -88,28 +61,8 @@
                 </div>
 
                 <div class="category-list">
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
-                    <div class="category-list__list-slide">
-                        <img src="images/F_webp,400.webp" alt="">
-                    </div>
                 </div>
+
                 <div class="swipe-button">
                     <button class="left-btn">
                         <img src="images/icon_slide_left.svg" alt="">
@@ -118,29 +71,38 @@
                         <img src="images/icon_slide_right.svg" alt="">
                     </button>
                 </div>
-                <div class="movie-list">
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                    </div>
-                    <div class="swiper-slide-box">
-                        <img class="banner-img" src="images/F_webp,1920.webp" alt="배너이미지">
-                    </div>
+            </div>
+        </section>
+
+        <section class="scroll-sub">
+            <div class="poster-wrap">
+                <div class="movie-title-text">
+                    <h3 class="title">지금 방영중인 인기 예능</h3>
+                </div>
+                <div class="movie-first-list">
+
                 </div>
 
-                <div class="banner-swipe-button">
-                    <button class="banner-left-btn">
+                <div class="movie-first-list-button">
+                    <button class="movie-first-left-btn">
                         <img src="images/icon_slide_left.svg" alt="">
                     </button>
-                    <button class="banner-right-btn">
+                    <button class="movie-first-right-btn">
+                        <img src="images/icon_slide_right.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="movie-title-text">
+                    <h3 class="title">지금 방영중인 인기 드라마</h3>
+                </div>
+                <div class="movie-second-list">
+                </div>
+
+                <div class="movie-second-list-button">
+                    <button class="movie-second-left-btn">
+                        <img src="images/icon_slide_left.svg" alt="">
+                    </button>
+                    <button class="movie-second-right-btn">
                         <img src="images/icon_slide_right.svg" alt="">
                     </button>
                 </div>
