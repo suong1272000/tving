@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .scroll-main .poster-wrap {
   width: 100vw;
   height: 100vh;
@@ -7,20 +8,43 @@
 .scroll-main .poster-wrap .banner {
   width: 100%;
   height: 66%;
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
+  white-space: nowrap; /* 요소들을 한 줄에 나열 */
+  overflow: hidden;
+  border-radius: 4px;
 }
 .scroll-main .poster-wrap .banner .swiper-slide-box {
   width: 100%;
   height: 100%;
-  display: flex;
+  position: relative;
+  display: inline-block; /* 인라인 블록 요소로 나열 */
+  margin: 0 -1.6px;
 }
 .scroll-main .poster-wrap .banner .swiper-slide-box .banner-img {
+  position: absolute;
   z-index: 1;
+  top: 0;
+  left: 0;
+}
+.scroll-main .poster-wrap .banner .swiper-slide-box .banner-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .scroll-main .poster-wrap .banner .swiper-slide-box .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 31.667rem;
+  position: absolute;
   z-index: 5;
+  top: 19.2rem;
+  left: 3.3rem;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  font-size: 1.5rem;
+}
+.scroll-main .poster-wrap .banner .swiper-slide-box .title-box img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 2.2rem;
 }
 .scroll-main .poster-wrap .category-list {
   margin-top: 1.2rem;

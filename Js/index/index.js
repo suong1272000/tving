@@ -5,19 +5,23 @@ const categoryData = data.data.bands[1];
 
 
 //card 추가하기
-// const bannerArr = bannerData.items.forEach((value) => {
-//     function renderCard(){
-//         const banner = document.querySelector('.banner')
-//         banner.insertAdjacentHTML('beforeend',`
-//         <div class="swiper-slide-box">
-//                 <img class="banner-img" src="${value.imageUrl}" alt="배너이미지">
-//                 <img class="title-img" src="${value.titleImageUrl}" alt="타이틀">
-//                 <p>${value.description[0]}</p>
-//                 <p>${value.description[1]}</p>
-//         </div>
-//         `)}
-//     return renderCard()
-// })
+const bannerArr = bannerData.items.forEach((value) => {
+    function renderCard(){
+        const banner = document.querySelector('.banner')
+        banner.insertAdjacentHTML('beforeend',`
+        <div class="swiper-slide-box">
+                        <div class="banner-img">
+                            <img src="${value.imageUrl}" alt="배너이미지">
+                        </div>
+                        <div class="title-box">
+                            <img src="${value.titleImageUrl}" alt="타이틀">
+                            <p>${value.description[0]}</p>
+                            <p>${value.description[1]}</p>
+                        </div>
+                    </div>
+        `)}
+    return renderCard()
+})
 
 //card 추가하기
 const categoryArr = categoryData.items.forEach((value) => {

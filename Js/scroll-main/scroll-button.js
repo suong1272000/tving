@@ -23,6 +23,7 @@ bannerRightBtn.addEventListener("click", () => {
     bannerPage.scrollBy({left: bannerPage.offsetWidth, behavior: 'smooth'});
 });
 
+
 const movieFirstPage = document.querySelector('.movie-first-list');
 
 const firstLeftBtn = document.querySelector('.movie-first-left-btn');
