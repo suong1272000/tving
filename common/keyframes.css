@@ -1,20 +1,4 @@
-@keyframes fade-in{
-    0%{opacity: 0;}
-    50%{opacity: 0.5;}
-    100%{opacity: 1;}
-}
-@keyframes float{
+@keyframes animate__slideInUp{
     0%{transform: translate(0px, 0px);}
-    50%{transform: translate(0px, -40px);}
-    100%{transform: translate(0px, -70px);}
-}
-@keyframes fadeInDown{
-    0%{transform: translate(0px, 0px);}
-    50%{transform: translate(0px, 20px);}
-    100%{transform: translate(0px, 40px);}
-}
-@keyframes zoomIn{
-    0%{transform: scale(1, 1);}
-    50%{transform: scale(1.2, 1.2);}
-    100%{transform: scale(1.5, 1.5);}
+    100%{transform: translate(0px, -20px);}
 }

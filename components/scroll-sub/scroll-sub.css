@@ -37,6 +37,12 @@
   justify-content: center;
   align-items: center;
 }
+.scroll-sub .poster-wrap .movie-first-list .swiper-slide-box:hover {
+  animation-name: animate__slideInUp;
+  animation-timing-function: linear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
 .scroll-sub .poster-wrap .movie-first-list .swiper-slide-box .movie-img {
   -o-object-fit: contain;
      object-fit: contain;

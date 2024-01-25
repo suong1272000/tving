@@ -21,6 +21,7 @@
             grid-row-gap: 0px;
             gap: 10px;
             overflow-x: auto;
+            
             &::-webkit-scrollbar{
                 display: none;
             }
@@ -34,6 +35,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                &:hover{
+                    animation-name: animate__slideInUp;
+                    animation-timing-function: linear;
+                    animation-duration: 0.2s;
+                    animation-fill-mode: forwards;
+                }
                 .movie-img{
                     object-fit: contain;
                 }
