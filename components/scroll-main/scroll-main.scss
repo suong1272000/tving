@@ -68,12 +68,6 @@
                     object-fit: contain;
                     width: 40%;
                 }
-                &:hover{
-                    animation-name: animate__slideInUp;
-                    animation-timing-function: linear;
-                    animation-duration: 0.2s;
-                    animation-fill-mode: forwards;
-                }
             }
         }
         .swipe-button{

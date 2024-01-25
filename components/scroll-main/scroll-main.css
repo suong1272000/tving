@@ -73,12 +73,6 @@
      object-fit: contain;
   width: 40%;
 }
-.scroll-main .poster-wrap .category-list .category-list__list-slide:hover {
-  animation-name: animate__slideInUp;
-  animation-timing-function: linear;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
 .scroll-main .poster-wrap .swipe-button {
   position: relative;
   top: -5.5rem;
